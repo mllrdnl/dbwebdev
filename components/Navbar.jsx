@@ -5,19 +5,19 @@ import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
 
 const leftLinks = [
+  { url: "/", title: "HOME" },
   { url: "/about", title: "ABOUT" },
-  { url: "/portfolio", title: "PORTFOLIO" },
 ];
 
 const rightLinks = [
-  { url: "/resume", title: "RESUME" },
+  { url: "/portfolio", title: "PORTFOLIO" },
   { url: "/contact", title: "CONTACT" },
 ];
 
 const links = [
+  { url: "/", title: "HOME" },
   { url: "/about", title: "ABOUT" },
   { url: "/portfolio", title: "PORTFOLIO" },
-  { url: "/resume", title: "RESUME" },
   { url: "/contact", title: "CONTACT" },
 ];
 

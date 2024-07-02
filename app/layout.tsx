@@ -23,7 +23,10 @@ export default function RootLayout({
             {/* <Navbar /> */}
             <Navbar />
           </div>
-          <div className="h-[calc(100vh-6rem)]">{children}</div>
+          <div className="h-[calc(100vh-6rem)] overflow-auto">
+            {/* h-[calc(100vh-6rem)] */}
+            {children}
+          </div>
         </div>
       </body>
     </html>

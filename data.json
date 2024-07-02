@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1",
+    "title": "Portfolio",
+    "slug": "portfolio",
+    "description": "My Full Stack Developer portfolio website.",
+    "tags": ["fullstack", "originalart", "websitemaint"],
+    "git_url": "https://github.com/mllrdnl/exuviae-portfolio",
+    "proj_url": "https://www.exuviae.me",
+    "image": "/exuviaehover.png",
+    "alt": "A drawing of a cicada exuviae glowing in green",
+    "tech": [
+      { "name": "NextJS 13", "logo_url": "/nexticon.png" },
+      { "name": "TypeScript", "logo_url": "/typescripticon.png" },
+      { "name": "Fresco", "logo_url": "/adobefrescoicon.png" }
+    ],
+    "wip": false,
+    "info": "I created this portfolio website using NextJS 13 and TypeScript and deployed it on Google Cloud.  I drew the cicada insect's exuviae in Adobe Fresco.  The color scheme was inspired by Ani DiFranco's album, Evolve, which has been hugely influential in my life."
+  },
+  {
+    "id": "5",
+    "title": "EmilySimpson.Art",
+    "slug": "EmilySimpsonArt",
+    "description": "A portfolio website for an artist locateed in New Orleans, LA.",
+    "tags": ["fullstack", "websitemaint"],
+    "git_url": "https://github.com/mllrdnl/ES-Art",
+    "proj_url": "https://www.emilysimpson.art/",
+    "image": "/esartimg.png",
+    "alt": "A screenshot of a website called Emily Simpson Art with marine plants at the bottom and bubbles throughout",
+    "tech": [
+      { "name": "ReactJS", "logo_url": "/reacticon.png" },
+      { "name": "REST APIs", "logo_url": "/apiicon.png" }
+    ],
+    "wip": false,
+    "info": "Emily Simpson is an artist located in New Orleans, LA, whom I've worked with since 2019.  I created this portfolio website using ReactJS to showcase her head pieces.  My next steps for this project are to add an admin portal so that she can projects easily and a contact form."
+  },
+  {
+    "id": "6",
+    "title": "Mal's Moderate Problem Blog",
+    "slug": "MalsMMPB",
+    "description": "A blog website about sobriety.",
+    "tags": ["fullstack", "websitemaint"],
+    "git_url": "https://github.com/mllrdnl/malsmpblog",
+    "proj_url": "https://malsmpblog-ecagt2iwi-mllrdnl.vercel.app/",
+    "image": "/malsmpblogimg.png",
+    "alt": "A screenshot of a website called Mals Moderate Problem that shows the title of the website and several links to blog posts",
+    "tech": [
+      { "name": "NextJS 13", "logo_url": "/nexticon.png" },
+      { "name": "Sanity.io", "logo_url": "/sanity.png" },
+      { "name": "TypeScript", "logo_url": "/typescripticon.png" },
+      { "name": "Vercel", "logo_url": "/vercelicon.png" }
+    ],
+    "wip": true,
+    "info": "I created this blog using NextJS 13 and TypeScript for two reasons -- a place to write about my journey with and without alcohol (actual blog posts coming soon), and an opportunity to learn a headless CMS (in this case, Sanity). "
+  },
+  {
+    "id": "2",
+    "title": "LendA",
+    "slug": "LendA",
+    "description": "A web app that connects lenders to borrowers in a communities by providing a seamless experience.",
+    "tags": ["frontend"],
+    "git_url": "https://github.com/Co-Lab-You-Belong-in-Tech/LendA",
+    "proj_url": "https://www.canva.com/design/DAFGykucu-4/ulRhkfghTWJWS7tkHNeyig/view?utm_content=DAFGykucu-4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    "image": "/lendaimg.png",
+    "alt": "A screenshot of a website titled LendA, showing a search bar and outlines of various tools available to borrow.",
+    "tech": [
+      { "name": "MongoDB", "logo_url": "/mongodbicon.png" },
+      { "name": "ReactJS", "logo_url": "/reacticon.png" },
+      { "name": "Express", "logo_url": "/express.png" },
+      { "name": "NextJS", "logo_url": "/nexticon.png" },
+      { "name": "Redux", "logo_url": "/reduxicon.png" },
+      { "name": "AWS S3", "logo_url": "/s3logo.png" }
+    ],
+    "wip": true,
+    "info": "Lenda was created in a program called CoLab.  Our team consisted of a Product Manager, a Design Manager, and two devleopers.  My co-developer and I decided to use a MERN Stack (with an AWS S3 bucket for product images) - I took the role of Front End Developer.  We deployed the MVP on Heroku using Docker. Our next steps are to apply the NextJS 13 framework and incorporate both a chat and map feature."
+  },
+  {
+    "id": "7",
+    "title": "Mindful Child Wellness",
+    "slug": "mcw",
+    "description": "A website for an organization in Kansas City that teaches children mindfulness through breathing exercises and ariel yoga.",
+    "tags": ["websitemaint"],
+    "proj_url": "https://www.mindfulchildaerialyoga.com/",
+    "image": "/mcwimg.png",
+    "alt": "A screenshot of the Mindful Child Wellness website showing a young girl and a woman doing poses in ariel yoga hammocks",
+    "tech": [
+      { "name": "WordPress", "logo_url": "/wordpressicon.png" },
+      { "name": "Canva", "logo_url": "/canvaicon.png" },
+      { "name": "Adobe Illustrator", "logo_url": "/adobeillustratoricon.png" }
+    ],
+    "wip": false,
+    "info": "The Mindful Child Wellness website was created by Social: Managed using WordPress.  I create and update images and content when needed. Seperately - I am currently building a custome web app for Mindful Child Wellness that allows students to login to a portal and easily access the homework assignments that the teachers have assigned to them."
+  },
+  {
+    "id": "8",
+    "title": "Foodle",
+    "slug": "foodle",
+    "description": "A web app that allows the user to search over 2.3 million recipes (using the Edamam API) and select meals they can make at home, using the ingredients they have in their pantry.",
+    "tags": ["fullstack"],
+    "git_url": "https://github.com/FoodleCO/foodle",
+    "proj_url": "https://food-le.herokuapp.com/",
+    "image": "/foodlescreenshot.png",
+    "alt": "screenshot of foodle app with colorful vegetables and a recipe",
+    "tech": [
+      { "name": "ReactJS", "logo_url": "/reacticon.png" },
+      { "name": "Python", "logo_url": "/pythonicon.png" },
+      { "name": "FlaskSQL", "logo_url": "/flaskicon.png" },
+      { "name": "Bootstrap", "logo_url": "/bootstrapicon.png" }
+    ],
+    "wip": true,
+    "info": "My teammate and I created this project in our Full Stack Developer Bootcamp through the 4Geeks Academy.  This was a huge learning experience project that I am very proud of to this day.  We used React and Bootstrap for our front end and Python/FlaskSQL for the back end.  We created our own ingredient database and utilized the Edamam API for the recipes."
+  },
+  {
+    "id": "3",
+    "title": "BrewBrowser",
+    "slug": "BrewBrowser",
+    "description": "An app made with ReactJS and the Brewery API that allows users to browse beers by style, create profiles, and save beers they've tried or would like to try to favorite lists and 'want to try' lists.",
+    "tags": ["fullstack", "originalart"],
+    "git_url": "https://github.com/mllrdnl/brewbrowserv2",
+    "proj_url": "https://brewbrowser.app/",
+    "image": "/brewbrowserimg.png",
+    "alt": "A screenshot of a website titled Brew Broswer with a sketched beer fridge",
+    "tech": [
+      { "name": "ReactJS", "logo_url": "/reacticon.png" },
+      { "name": "REST APIs", "logo_url": "/apiicon.png" },
+      { "name": "MongoDB", "logo_url": "/mongodbicon.png" },
+      { "name": "Fresco", "logo_url": "/adobefrescoicon.png" }
+    ],
+    "wip": true,
+    "info": "BrewBrowser is a work in progress!  I drew the beer fridge and beer glass logo in Adobe Fresco and used CSS for the beer can animation."
+  },
+  {
+    "id": "4",
+    "title": "Pack-Way",
+    "slug": "PackWay",
+    "description": "A web app that makes the process of planning trips for hikers and campers more efficient.",
+    "tags": ["frontend"],
+    "git_url": "https://github.com/Co-Lab-You-Belong-in-Tech/Pack-Way",
+    "proj_url": "https://brewbrowser.app/",
+    "image": "/packwayimg.png",
+    "alt": "A screenshot of a website called Packway, showing a cartoon person hiking with a walking stick.",
+    "tech": [
+      { "name": "ReactJS", "logo_url": "/reacticon.png" },
+      { "name": "REST APIs", "logo_url": "/apiicon.png" }
+    ],
+    "wip": true,
+    "info": "Pack-way was created in a program called CoLab.  I was the Front End Developer on the team and I worked mainly with ReactJS.  We used a MERN Stack for this project's tech."
+  }
+]

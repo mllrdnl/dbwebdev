@@ -10,10 +10,20 @@ const NavLink = ({ link }) => {
 
   return (
     <Link
-      className={`rounded-lg p-2 ${
-        pathName === link.url &&
-        "border border-[#C434C4] shadow-md shadow-[rgb(227,143,229,0.8)] font-semibold text-[#78efc0]"
-      }`}
+      // className={`rounded-lg p-2 ${
+      //   pathName === link.url &&
+      //   "border-2 border-[#E38FFF] font-extrabold text-[#78efc0]"
+      // }`}
+      className={
+        pathName === link.url && `${link.url}/slug`
+          ? `rounded-lg p-2 border-2 border-[#E38FFF] font-extrabold text-[#78efc0]`
+          : `rounded-lg p-2`
+      }
+      // className={
+      //   pathName === `${link.url}/slug`
+      //     ? `rounded-lg p-2 border-2 border-[#E38FFF] font-extrabold text-[#78efc0]`
+      //     : `rounded-lg p-2`
+      // }
       href={link.url}
     >
       {link.title}
