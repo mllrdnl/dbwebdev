@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-screen h-screen bg-gradient-to-b from-[#191d24] to-[#001229] text-white font-pro">
-          <div className="h-24 text-white">
-            {/* <Navbar /> */}
+        <div className="w-screen h-screen bg-brick-pattern bg-contain bg-center text-white font-pro">
+          {/* <div className="h-24 text-white">
+            
             <Navbar />
-          </div>
+          </div> */}
           <div className="h-[calc(100vh-6rem)] overflow-auto">
             {/* h-[calc(100vh-6rem)] */}
             {children}
@@ -32,3 +32,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// bg-gradient-to-b from-[#191d24] to-[#001229]
