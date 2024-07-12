@@ -7,10 +7,10 @@ import UnClickedChain from "../components/UnClickedChain";
 import ClickedChain from "../components/ClickedChain";
 import aboutPoster from "../public/AboutPoster_On4.png";
 import portfolioPoster from "../public/PortfolioPoster_On.png";
-import contactPoster from "../public/ContactPoster.png";
+import contactPoster from "../public/ContactPoster_On.png";
 import aboutOff from "../public/AboutPoster_Off.png";
-import portfolioOff from "../public/PortfolioPosterOff.png";
-import contactOff from "../public/ContactPosterOff.png";
+import portfolioOff from "../public/PortfolioPoster_Off.png";
+import contactOff from "../public/ContactPoster_Off.png";
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState(false);
