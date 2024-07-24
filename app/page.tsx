@@ -1,6 +1,8 @@
 "use client";
 
+import usePersistState from "../lib/usePersistState";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, useAnimate, useTransform } from "framer-motion";
 import UnClickedChain from "../components/UnClickedChain";
@@ -13,7 +15,7 @@ import portfolioOff from "../public/PortfolioPoster_Off.png";
 import contactOff from "../public/ContactPoster_Off.png";
 
 export default function Home() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = usePersistState("!isClicked", "isClicked");
 
   return (
     <div className="w-full h-full flex flex-col">
@@ -28,7 +30,7 @@ export default function Home() {
           />
         </div>
         <motion.div
-          className="col-start-5 invisible phone:visible col-span-1 w-1/2 absolute -bottom-32 laptop:-bottom-34 right-4 z-0 hover:cursor-pointer"
+          className="absolute desktop:col-start-5 pointer-events-auto smphone:visible phone:visible desktop:col-span-1 desktop:w-1/2  desktop:-bottom-32 smphone:-bottom-6 smphone:-right-8 smphone:col-span-1 smphone:col-start-6 smphone: phone:col-span-1 phone:w-1/2 phone:col-start-6 phone:-bottom-8 tablet:col-span-1 tablet:col-start-6 tablet:-bottom-24 tablet:right-28 laptop:-bottom-32 laptop:right-26 desktop:right-4 phone:right-0 z-0 hover:cursor-pointer"
           whileHover={{ scale: 1.1, x: 10, y: 40 }}
           // onHoverStart={(e) => {}}
           // onHoverEnd={(e) => {}}
@@ -39,24 +41,39 @@ export default function Home() {
           {isClicked ? <ClickedChain /> : <UnClickedChain />}
         </motion.div>
       </div>
-      <div className="flex flex-row w-full justify-between mt-12 px-48">
-        <div className="w-80">
+      <div className="flex flex-row w-full h-full max-w-7xl tablet:overflow-auto justify-between mt-12 smphone:mt-2 smphone:mx-auto smphone:p-6  phone:mx-auto desktop:p-12 smphone:flex-col phone:flex-col desktop:flex-row">
+        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
-            <Image src={aboutPoster} alt="about me poster" />
+            <div className="hover:scale-125 cursor-pointer transition ease-in-out z-10">
+              <Link
+                href="/about"
+                className="hover:scale-125 cursor-pointer transition ease-in-out"
+              >
+                <Image src={aboutPoster} alt="about me poster" />
+              </Link>
+            </div>
           ) : (
             <Image src={aboutOff} alt="about me poster" />
           )}
         </div>
-        <div className="w-80">
+        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
-            <Image src={portfolioPoster} alt="portfolio poster" />
+            <div className="hover:scale-125 cursor-pointer transition ease-in-out">
+              <Link href="/portfolio">
+                <Image src={portfolioPoster} alt="portfolio poster" />
+              </Link>
+            </div>
           ) : (
             <Image src={portfolioOff} alt="portfolio poster" />
           )}
         </div>
-        <div className="w-80">
+        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
-            <Image src={contactPoster} alt="portfolio poster" />
+            <div className="hover:scale-125 cursor-pointer transition ease-in-out">
+              <Link href="/contact">
+                <Image src={contactPoster} alt="portfolio poster" />
+              </Link>
+            </div>
           ) : (
             <Image src={contactOff} alt="portfolio poster" />
           )}

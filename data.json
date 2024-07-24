@@ -7,7 +7,7 @@
     "tags": ["fullstack", "originalart", "websitemaint"],
     "git_url": "https://github.com/mllrdnl/exuviae-portfolio",
     "proj_url": "https://www.exuviae.me",
-    "image": "/exuviaehover.png",
+    "image": "/exuviaePortfolio.png",
     "alt": "A drawing of a cicada exuviae glowing in green",
     "tech": [
       { "name": "NextJS 13", "logo_url": "/nexticon.png" },
@@ -25,7 +25,7 @@
     "tags": ["fullstack", "websitemaint"],
     "git_url": "https://github.com/mllrdnl/ES-Art",
     "proj_url": "https://www.emilysimpson.art/",
-    "image": "/esartimg.png",
+    "image": "/esArtPoster.png",
     "alt": "A screenshot of a website called Emily Simpson Art with marine plants at the bottom and bubbles throughout",
     "tech": [
       { "name": "ReactJS", "logo_url": "/reacticon.png" },
@@ -42,7 +42,7 @@
     "tags": ["fullstack", "websitemaint"],
     "git_url": "https://github.com/mllrdnl/malsmpblog",
     "proj_url": "https://malsmpblog-ecagt2iwi-mllrdnl.vercel.app/",
-    "image": "/malsmpblogimg.png",
+    "image": "/mmpBlogPoster.png",
     "alt": "A screenshot of a website called Mals Moderate Problem that shows the title of the website and several links to blog posts",
     "tech": [
       { "name": "NextJS 13", "logo_url": "/nexticon.png" },
@@ -61,7 +61,7 @@
     "tags": ["frontend"],
     "git_url": "https://github.com/Co-Lab-You-Belong-in-Tech/LendA",
     "proj_url": "https://www.canva.com/design/DAFGykucu-4/ulRhkfghTWJWS7tkHNeyig/view?utm_content=DAFGykucu-4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
-    "image": "/lendaimg.png",
+    "image": "/LendAPoster.png",
     "alt": "A screenshot of a website titled LendA, showing a search bar and outlines of various tools available to borrow.",
     "tech": [
       { "name": "MongoDB", "logo_url": "/mongodbicon.png" },
@@ -81,7 +81,7 @@
     "description": "A website for an organization in Kansas City that teaches children mindfulness through breathing exercises and ariel yoga.",
     "tags": ["websitemaint"],
     "proj_url": "https://www.mindfulchildaerialyoga.com/",
-    "image": "/mcwimg.png",
+    "image": "/mcwPoster.png",
     "alt": "A screenshot of the Mindful Child Wellness website showing a young girl and a woman doing poses in ariel yoga hammocks",
     "tech": [
       { "name": "WordPress", "logo_url": "/wordpressicon.png" },
@@ -99,7 +99,7 @@
     "tags": ["fullstack"],
     "git_url": "https://github.com/FoodleCO/foodle",
     "proj_url": "https://food-le.herokuapp.com/",
-    "image": "/foodlescreenshot.png",
+    "image": "/foodlePoster.png",
     "alt": "screenshot of foodle app with colorful vegetables and a recipe",
     "tech": [
       { "name": "ReactJS", "logo_url": "/reacticon.png" },
@@ -118,7 +118,7 @@
     "tags": ["fullstack", "originalart"],
     "git_url": "https://github.com/mllrdnl/brewbrowserv2",
     "proj_url": "https://brewbrowser.app/",
-    "image": "/brewbrowserimg.png",
+    "image": "/brewBrowserPoster.png",
     "alt": "A screenshot of a website titled Brew Broswer with a sketched beer fridge",
     "tech": [
       { "name": "ReactJS", "logo_url": "/reacticon.png" },
@@ -137,7 +137,7 @@
     "tags": ["frontend"],
     "git_url": "https://github.com/Co-Lab-You-Belong-in-Tech/Pack-Way",
     "proj_url": "https://brewbrowser.app/",
-    "image": "/packwayimg.png",
+    "image": "/packwayPoster.png",
     "alt": "A screenshot of a website called Packway, showing a cartoon person hiking with a walking stick.",
     "tech": [
       { "name": "ReactJS", "logo_url": "/reacticon.png" },

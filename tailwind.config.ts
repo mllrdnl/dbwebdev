@@ -26,6 +26,11 @@ const config: Config = {
         link: "2px 3px 7px rgb(255, 255, 255, 0.4)",
         linkb: "2px 3px 7px rgb(168, 162, 158, 0.6)",
       },
+      fontFamily: {
+        mendlSansDawn: "var(--font-mendlSansDawn)",
+        mendlSansDusk: "var(--font-mendlSansDusk)",
+        rollerScript: "var(--font-rollerScript)",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
