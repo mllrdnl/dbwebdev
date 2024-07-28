@@ -25,6 +25,8 @@ const config: Config = {
         all: "0px 0px 10px 2px rgb(227,143,229,0.8)",
         link: "2px 3px 7px rgb(255, 255, 255, 0.4)",
         linkb: "2px 3px 7px rgb(168, 162, 158, 0.6)",
+        greenbtn: "5px 6px 12px rgb(122, 249, 139, 0.4)",
+        bluebtn: "5px 6px 12px rgb(0, 255, 245, 0.4)",
       },
       fontFamily: {
         mendlSansDawn: "var(--font-mendlSansDawn)",

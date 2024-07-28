@@ -16,14 +16,9 @@ const NavLink = ({ link }) => {
       // }`}
       className={
         pathName === link.url && `${link.url}/slug`
-          ? `rounded-lg p-2 border-2 border-[#E38FFF] font-extrabold text-[#78efc0]`
-          : `rounded-lg p-2`
+          ? `rounded-lg p-1 text-3xl font-rollerScript lowercase font-bold text-[#78efc0]`
+          : `rounded-lg p-2 text-xl font-semibold`
       }
-      // className={
-      //   pathName === `${link.url}/slug`
-      //     ? `rounded-lg p-2 border-2 border-[#E38FFF] font-extrabold text-[#78efc0]`
-      //     : `rounded-lg p-2`
-      // }
       href={link.url}
     >
       {link.title}

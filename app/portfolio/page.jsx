@@ -5,7 +5,7 @@ import projData from "../../data.json";
 import ProjectScript from "../../public/images/projects_script.png";
 import projectGallery from "../../public/images/projectgallery.png";
 import Navbar from "@/components/Navbar";
-import PosterCard from "../../components/PosterCard";
+import PosterCard from "../../components/posterCard";
 
 const PortfolioPage = () => {
   return (

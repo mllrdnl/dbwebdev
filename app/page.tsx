@@ -15,7 +15,28 @@ import portfolioOff from "../public/PortfolioPoster_Off.png";
 import contactOff from "../public/ContactPoster_Off.png";
 
 export default function Home() {
-  const [isClicked, setIsClicked] = usePersistState("!isClicked", "isClicked");
+  // const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(() => {
+    return JSON.parse(localStorage.getItem("clicked_state")!) || "";
+  });
+
+  const handleToggle = () => {
+    setIsClicked(!isClicked);
+    console.log(isClicked);
+  };
+
+  useEffect(() => {
+    localStorage.setItem("clicked_state", JSON.stringify(isClicked));
+  }, [isClicked]);
+
+  // useEffect(() => {
+  //   const data = window.localStorage.getItem("clicked_state");
+  //   if (data !== null) setIsClicked(JSON.parse(data));
+  // }, []);
+
+  // useEffect(() => {
+  //   window.localStorage.setItem("clicked_state", JSON.stringify(isClicked));
+  // }, [isClicked]);
 
   return (
     <div className="w-full h-full flex flex-col">
@@ -36,7 +57,7 @@ export default function Home() {
           // onHoverEnd={(e) => {}}
           whileTap={{ y: 90 }}
           transition={{ type: "spring", stiffness: 600, damping: 20 }}
-          onClick={() => setIsClicked(!isClicked)}
+          onClick={handleToggle}
         >
           {isClicked ? <ClickedChain /> : <UnClickedChain />}
         </motion.div>
@@ -79,7 +100,6 @@ export default function Home() {
           )}
         </div>
       </div>
-      {/* <div className="flex flex-row justify-center mt-0 align-top"></div> */}
     </div>
   );
 }
