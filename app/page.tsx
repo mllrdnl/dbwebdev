@@ -15,19 +15,19 @@ import portfolioOff from "../public/PortfolioPoster_Off.png";
 import contactOff from "../public/ContactPoster_Off.png";
 
 export default function Home() {
-  // const [isClicked, setIsClicked] = useState(false);
-  const [isClicked, setIsClicked] = useState(() => {
-    return JSON.parse(localStorage.getItem("clicked_state")!) || "";
-  });
+  const [isClicked, setIsClicked] = useState(true);
+  // const [isClicked, setIsClicked] = useState(() => {
+  //   return JSON.parse(localStorage.getItem("clicked_state")!) || "";
+  // });
 
   const handleToggle = () => {
     setIsClicked(!isClicked);
     console.log(isClicked);
   };
 
-  useEffect(() => {
-    localStorage.setItem("clicked_state", JSON.stringify(isClicked));
-  }, [isClicked]);
+  // useEffect(() => {
+  //   localStorage.setItem("clicked_state", JSON.stringify(isClicked));
+  // }, [isClicked]);
 
   // useEffect(() => {
   //   const data = window.localStorage.getItem("clicked_state");

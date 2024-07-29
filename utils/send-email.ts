@@ -8,9 +8,7 @@ export function sendEmail(data: FormData) {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((response) => {
-      alert(response.message);
-    })
+    .then((response) => {})
     .catch((err) => {
       alert(err);
     });
