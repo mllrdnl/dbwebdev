@@ -1,11 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { FC } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
+import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z, ZodType } from "zod";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export type FormData = {
   firstName: string;
@@ -15,6 +18,8 @@ export type FormData = {
 };
 
 const ContactForm: FC = () => {
+  const [hideForm, setHideForm] = useState(false);
+
   const FormDataSchema: ZodType = z.object({
     firstName: z.string().trim().min(1, {
       message: "First name is required.",
@@ -37,11 +42,47 @@ const ContactForm: FC = () => {
   const submitData: SubmitHandler<FormData> = (data) => {
     console.log("it worked!", data);
     sendEmail(data);
+
+    if (data) {
+      toast("⚡️ Submission successful!");
+      setHideForm(true);
+    }
   };
 
   return (
     <div className="flex flex-col smphone:w-5/6 tablet:w-3/5 desktop:w-1/2 mx-auto">
-      <form onSubmit={handleSubmit(submitData)} className="flex flex-col mt-4">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+      <div
+        // className="flex flex-col w-5/6 h-64 mx-auto justify-center justify-items-center rounded bg-sky-950/75"
+        className={`${
+          hideForm !== true
+            ? `invisible h-0`
+            : `visible flex flex-col mt-4 w-5/6 h-64 mx-auto justify-center justify-items-center rounded bg-sky-950/75`
+        }`}
+      >
+        <p className="text-5xl font-bold text-center">THANK YOU!</p>
+        <p className="text-xl text-center mt-6">
+          I will get back to you within the next 2-3 busines days.
+        </p>
+      </div>
+
+      <form
+        onSubmit={handleSubmit(submitData)}
+        className={`${
+          hideForm === true ? `invisible` : `visible flex flex-col mt-0`
+        }`}
+      >
         <div className="flex flex-row smphone:flex-col laptop:flex-row">
           <div className="flex flex-col p-4 w-1/2 smphone:w-full smphone:p-2 laptop:p-4">
             <label className="text-xl">First Name</label>

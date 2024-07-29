@@ -62,8 +62,8 @@ export default function Home() {
           {isClicked ? <ClickedChain /> : <UnClickedChain />}
         </motion.div>
       </div>
-      <div className="flex flex-row w-full h-full max-w-7xl tablet:overflow-auto justify-between mt-12 smphone:mt-2 smphone:mx-auto smphone:p-6  phone:mx-auto desktop:p-12 smphone:flex-col phone:flex-col desktop:flex-row">
-        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
+      <div className="flex flex-row w-full h-full max-w-7xl tablet:overflow-auto justify-between mt-12 phone:mx-auto desktop:p-12 smphone:flex-col smphone:mx-auto smphone:mt-2 phone:flex-col laptop:flex-row desktop:flex-row">
+        <div className="smphone:w-64 smphone:mx-auto phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
             <div className="hover:scale-125 cursor-pointer transition ease-in-out z-10">
               <Link
@@ -77,7 +77,7 @@ export default function Home() {
             <Image src={aboutOff} alt="about me poster" />
           )}
         </div>
-        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
+        <div className="smphone:w-64 smphone:mx-auto phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
             <div className="hover:scale-125 cursor-pointer transition ease-in-out">
               <Link href="/portfolio">
@@ -88,7 +88,7 @@ export default function Home() {
             <Image src={portfolioOff} alt="portfolio poster" />
           )}
         </div>
-        <div className="smphone:w-64 phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
+        <div className="smphone:w-64 smphone:mx-auto phone:mx-auto tablet:w-80 laptop:w-1/2 desktop:w-80">
           {isClicked ? (
             <div className="hover:scale-125 cursor-pointer transition ease-in-out">
               <Link href="/contact">

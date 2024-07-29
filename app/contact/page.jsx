@@ -16,7 +16,7 @@ const ContactPage = () => {
         <Image src={ContactScript} alt="contact me" priority />
       </div>
       <div className="flex flex-row mx-auto">
-        <div className="w-5/6 font-mendlSansDawn mx-auto justify-center text-center text-3xl text-[#00FFF5]">
+        <div className="w-5/6 font-mendlSansDawn mx-auto justify-center text-center text-3xl text-[#00FFF5] mb-0">
           LET&apos;S CREATE SOMETHING TOGETHER!
         </div>
       </div>
