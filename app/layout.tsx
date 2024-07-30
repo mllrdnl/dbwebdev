@@ -100,7 +100,7 @@ export default function RootLayout({
             
             <Navbar />
           </div> */}
-          <div className="h-[calc(100vh-6rem)] overflow-auto">
+          <div className="h-full overflow-auto">
             {/* h-[calc(100vh-6rem)] */}
             {children}
             <Analytics />

@@ -30,7 +30,7 @@ const AboutPage = () => {
           to create an optimized and smooth experience for the end user.
         </p>
       </div>
-      <div className="flex flex-row smphone:w-5/6 phone:w-5/6 tablet:w-3/5 laptop:w-3/4 desktop:w-3/5 mt-4 mx-auto">
+      <div className="flex flex-row smphone:w-5/6 phone:w-5/6 tablet:w-3/5 laptop:w-3/4 desktop:w-3/5 mt-4 mb-4 mx-auto">
         {/* RESUME */}
         <Link
           href="/Resume.pdf"

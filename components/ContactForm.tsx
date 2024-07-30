@@ -130,7 +130,7 @@ const ContactForm: FC = () => {
         <div className="flex flex-row">
           <button
             type="submit"
-            className="border border-[#00FFF5] rounded p-2 w-1/5 mx-auto text-2xl text-[#00FFF5] font-semibold shadow-bluebtn hover:scale-105 hover:border-[#7AF98A] hover:text-[#7AF98A] hover:shadow-greenbtn transition duration-150 ease-in-out"
+            className="border border-[#00FFF5] rounded p-2 w-1/5 smphone:w-3/4 tablet:w-1/3 mx-auto text-2xl text-[#00FFF5] font-semibold shadow-bluebtn hover:scale-105 hover:border-[#7AF98A] hover:text-[#7AF98A] hover:shadow-greenbtn transition duration-150 ease-in-out"
           >
             SUBMIT
           </button>
