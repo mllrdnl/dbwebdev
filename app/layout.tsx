@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -102,6 +103,7 @@ export default function RootLayout({
           <div className="h-[calc(100vh-6rem)] overflow-auto">
             {/* h-[calc(100vh-6rem)] */}
             {children}
+            <Analytics />
           </div>
         </div>
       </body>
